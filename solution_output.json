@@ -1,7 +1,69 @@
 {
-  "total_revenue": 860.0,
-  "best_selling_sku": {
-    "sku": "SKU-B456",
-    "total_quantity": 8
-  }
+    "total_revenue": 710,
+    "best_selling_sku": {
+        "sku": "SKU-A123",
+        "total_quantity": 5
+    },
+    "failed_rows": [
+        {
+            "line": 8,
+            "reason": "sku does not match required format SKU-XXX.",
+            "row_data": {
+                "order_id": "100",
+                "sku": "SKlksd",
+                "quantity": "2",
+                "price": "10"
+            }
+        },
+        {
+            "line": 9,
+            "reason": "Missing quantity.",
+            "row_data": {
+                "order_id": "1006",
+                "sku": "SKU-B345",
+                "quantity": "",
+                "price": "194"
+            }
+        },
+        {
+            "line": 10,
+            "reason": "Missing price.",
+            "row_data": {
+                "order_id": "1006",
+                "sku": "SKU-B345",
+                "quantity": "194",
+                "price": ""
+            }
+        },
+        {
+            "line": 11,
+            "reason": "Missing sku.",
+            "row_data": {
+                "order_id": "1005",
+                "sku": "",
+                "quantity": "-2",
+                "price": "120"
+            }
+        },
+        {
+            "line": 12,
+            "reason": "Missing order_id.",
+            "row_data": {
+                "order_id": "",
+                "sku": "SKU-C789",
+                "quantity": "5",
+                "price": "20.0"
+            }
+        },
+        {
+            "line": 13,
+            "reason": "Missing order_id.",
+            "row_data": {
+                "order_id": "",
+                "sku": "",
+                "quantity": "",
+                "price": null
+            }
+        }
+    ]
 }
